@@ -3,68 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | Daily Cup</title>
+    <title>Contact | Mrf Meow Café</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&amp;display=swap">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js" defer></script>
 </head>
 <body>
     <header>
         <div class="container header-content">
-            <a class="logo" href="index.html" aria-label="Daily Cup home">Daily Cup<span>.</span></a>
+            <a class="logo" href="index.html">🐾 Mrf Meow Café</a>
             <nav aria-label="Main navigation">
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
                 <a href="menu.html">Menu</a>
-                <a href="gallery.html">Gallery</a>
-                <a href="contact.html" aria-current="page">Contact</a>
+                <a href="gallery.html">Our Cats</a>
+                <a href="contact.html" class="active" aria-current="page">Contact</a>
             </nav>
         </div>
     </header>
 
     <main class="container">
         <h1>Contact us</h1>
-        <p class="mb-4">Have a question about Daily Cup? Try our contact form below.</p>
+        <p class="mb-4">Drop by for a coffee and a cosy break, or get in touch with a question.</p>
 
         <div class="row g-4">
-            <section class="col-lg-5">
-                <h2>Get in touch</h2>
-                <p>Location: Astana, Kazakhstan<br>Email: hello@dailycup.example</p>
-                <h3>Opening hours</h3>
-                <ul>
-                    <li>Monday to Friday: 8:00–20:00</li>
-                    <li>Saturday and Sunday: 9:00–21:00</li>
-                </ul>
-                <p>Daily Cup is a student project. The contact details and opening hours are examples.</p>
+            <section class="col-md-6">
+                <h2>Visit Mrf Meow Café</h2>
+                <p>Astana, Kazakhstan<br>hello@mrfmeow.example</p>
+                <h2>Opening hours</h2>
+                <p>Monday–Friday: 9:00–20:00<br>Saturday–Sunday: 10:00–21:00</p>
+                <img class="photo" src="images/cafe.jpg" alt="Warm hanging lights and a glowing café sign above the counter" loading="lazy">
             </section>
-            <section class="col-lg-7">
-                <h2>Send a message</h2>
-                <form id="contact-form" aria-describedby="form-note">
-                    <p id="form-note">Demo form: your details are checked in the browser. Nothing is sent or stored.</p>
+            <div class="col-md-6">
+                <form id="contact-form" action="contact.html" method="get">
+                    <p>Student demo: this form does not deliver messages.</p>
                     <div class="mb-3">
                         <label class="form-label" for="name">Name</label>
-                        <input class="form-control" id="name" name="name" type="text" autocomplete="name" required>
+                        <input class="form-control" id="name" name="name" type="text" required>
                     </div>
                     <div class="mb-3">
                         <label class="form-label" for="email">Email</label>
-                        <input class="form-control" id="email" name="email" type="email" autocomplete="email" required>
+                        <input class="form-control" id="email" name="email" type="email" required>
                     </div>
                     <div class="mb-3">
                         <label class="form-label" for="message">Message</label>
                         <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
                     </div>
-                    <button class="btn btn-coffee" type="submit">Check message</button>
-                    <p id="form-status" class="mt-3 mb-0" role="status"></p>
+                    <button class="btn btn-meow" type="submit">Submit</button>
                 </form>
-            </section>
+            </div>
         </div>
     </main>
 
-    <footer>
-        <div class="container text-center">
-            <p>Astana, Kazakhstan · hello@dailycup.example</p>
-            <p>Social platforms: <a href="https://www.instagram.com/">Instagram</a> · <a href="https://www.facebook.com/">Facebook</a></p>
-            <p class="mb-0">&copy; 2026 Daily Cup. Student project · IT-2501.</p>
+    <footer class="py-4 text-center">
+        <div class="container">
+            <p>Astana, Kazakhstan · hello@mrfmeow.example</p>
+            <p><a href="https://www.instagram.com/">Instagram</a> · <a href="https://www.facebook.com/">Facebook</a></p>
+            <p class="mb-0">&copy; 2026 Mrf Meow Café · IT-2501</p>
         </div>
     </footer>
 </body>
